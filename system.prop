@@ -8,6 +8,9 @@ persist.demo.hdmirotationlock=false
 vendor.display.disable_rotator_downscale=1
 vendor.display.disable_scaler=0
 
+# Dalvik
+dalvik.vm.dex2oat64.enabled=true
+
 # Fling
 ro.min.fling_velocity=160
 ro.max.fling_velocity=20000
