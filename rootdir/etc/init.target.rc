@@ -189,6 +189,13 @@ on boot
     setprop vendor.usb.rmnet.inst.name "rmnet"
     setprop vendor.usb.dpl.inst.name "dpl"
     setprop sys.usb.configfs 1
+    
+on property:vendor.post_boot.parsed=1
+    # tune blkio
+    write /dev/blkio/blkio.weight 1000
+    write /dev/blkio/background/blkio.weight 200
+    write /dev/blkio/blkio.group_idle 2000
+    write /dev/blkio/background/blkio.group_idle 0
 
 #pd-mapper
 service vendor.pd_mapper /vendor/bin/pd-mapper
