@@ -5,6 +5,8 @@ ro.sys.fw.dex2oat_thread_count=8
 debug.cpurend.vsync=false
 persist.hwc.enable_vds=1
 persist.demo.hdmirotationlock=false
+vendor.display.disable_rotator_downscale=1
+vendor.display.disable_scaler=0
 
 # Fling
 ro.min.fling_velocity=160
