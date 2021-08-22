@@ -1,5 +1,9 @@
 # ART
 ro.sys.fw.dex2oat_thread_count=8
+dalvik.vm.dex2oat-filter=speed
+dalvik.vm.image-dex2oat-filter=speed
+dalvik.vm.dex2oat-minidebuginfo=false
+dalvik.vm.minidebuginfo=false
 
 # Display
 debug.cpurend.vsync=false
