@@ -225,6 +225,13 @@ on charger
 
 service thermal-engine /system/vendor/bin/thermal-engine
    class main
+
+on property:persist.sys.device_provisioned=1
+    setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,4,5,6,7
+    setprop dalvik.vm.dex2oat-threads 4
+    setprop dalvik.vm.image-dex2oat-cpu-set 4,5,6,7
+    setprop dalvik.vm.image-dex2oat-threads 4
+
    user root
    socket thermal-send-client stream 0666 system system
    socket thermal-recv-client stream 0660 system system
