@@ -323,3 +323,6 @@ on  property:vendor.camera.cpuperf.en=1
 	write /dev/stune/foreground/schedtune.prefer_idle 1
 on  property:vendor.camera.cpuperf.en=0
 	write /dev/stune/foreground/schedtune.prefer_idle 0
+
+# Enable suspend to RAM
+write /sys/power/mem_sleep "deep"
