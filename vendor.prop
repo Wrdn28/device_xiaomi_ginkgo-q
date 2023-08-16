@@ -191,6 +191,18 @@ ro.vendor.extension_library=libqti-perfd-client.so
 # Phantom process monitoring
 sys.fflag.override.settings_enable_monitor_phantom_procs=false
 
+# RAM Management
+ro.config.fha_enable=true
+ro.sys.fw.bg_apps_limit=32
+ro.config.dha_cached_max=16
+ro.config.dha_empty_manfig.
+ro.config.dha_empty_init=32
+ro.rate=2.3
+rcale=0.545
+ro.config.dha_th_rate=2.3
+ro.config.sdha_apps_bg_max=64
+ro.config.sdha_apps_bg_min=8
+
 # RIL
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
