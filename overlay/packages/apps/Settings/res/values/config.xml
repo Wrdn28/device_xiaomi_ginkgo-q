@@ -36,4 +36,7 @@
 
     <!-- Disable Ultra Power Saving by default -->
     <bool name="config_supportUltraPowerSaving">false</bool>
+
+    <!-- Nusantara parts -->
+    <bool name="has_nusantara_parts_available">true</bool>
 </resources>
