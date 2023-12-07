@@ -544,6 +544,10 @@ service fstman_wlan0 /vendor/bin/fstman -B -ddd -c /data/vendor/wifi/fstman.ini 
     oneshot
     writepid /dev/cpuset/system-background/tasks
 
+    # Restrict permissions to socket file 
+    # to hide Magisk & co.
+    chmod 440 /proc/net/unix
+
 service wigignpt /vendor/bin/wigignpt
     interface vendor.qti.hardware.wigig.netperftuner@1.0::INetPerfTuner default
     class hal
