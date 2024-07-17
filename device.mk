@@ -429,7 +429,8 @@ PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
 WITH_DEXPREOPT_DEBUG_INFO := false
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     Settings \
-    SystemUI
+    SystemUI \
+    TrebuchetQuickStep
 
 # Telephony
 PRODUCT_PACKAGES += \
