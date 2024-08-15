@@ -355,6 +355,10 @@ PRODUCT_PACKAGES += \
     libvndfwk_detect_jni.qti.vendor \
     libqti_vndfwk_detect.vendor
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    removepackages
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
