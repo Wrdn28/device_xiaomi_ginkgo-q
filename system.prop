@@ -15,6 +15,10 @@ vendor.display.disable_scaler=0
 # Dalvik
 dalvik.vm.dex2oat64.enabled=true
 
+# Dexopt
+pm.dexopt.first-boot=quicken
+pm.dexopt.bg-dexopt=everything
+
 # Fling
 ro.min.fling_velocity=160
 ro.max.fling_velocity=20000
