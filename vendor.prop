@@ -196,6 +196,7 @@ ro.vendor.extension_library=libqti-perfd-client.so
 sys.fflag.override.settings_enable_monitor_phantom_procs=false
 
 # RAM Management
+ro.vendor.qti.sys.fw.bservice_enable=true
 ro.config.fha_enable=true
 ro.sys.fw.bg_apps_limit=32
 ro.config.dha_cached_max=16
