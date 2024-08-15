@@ -36,5 +36,8 @@ iorapd.perfetto.enable=false
 iorapd.readahead.enable=false
 persist.device_config.runtime_native_boot.iorap_readahead_enable=false
 
+# Perf
+vendor.perf.gestureflingboost.enable=true
+
 # Zygote preforking
 zygote.critical_window.minute=10
