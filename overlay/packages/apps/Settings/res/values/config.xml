@@ -33,4 +33,7 @@
 
     <!-- Whether hardware revision should be shown or not. -->
     <bool name="config_show_hardware_revision">false</bool>
+
+    <!-- Disable Ultra Power Saving by default -->
+    <bool name="config_supportUltraPowerSaving">false</bool>
 </resources>
