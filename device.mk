@@ -282,12 +282,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_willow/android.hardware.nfc.hcef.xml \
     frameworks/native/data/etc/android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_willow/android.hardware.nfc.uicc.xml
 
-# Optimize
-PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
-PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
-PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
-PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
-
 # Parts
 PRODUCT_PACKAGES += \
     XiaomiParts
@@ -416,6 +410,7 @@ PRODUCT_PACKAGES += \
 ifneq ($(TARGET_BUILD_VARIANT),eng)
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
+PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
 ART_BUILD_TARGET_NDEBUG := true
 ART_BUILD_TARGET_DEBUG := false
 ART_BUILD_HOST_NDEBUG := true
@@ -444,17 +439,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     kernel/xiaomi/ginkgo
-
-# Speed profile services and wifi-service to reduce RAM and storage
-PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
-PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
-PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-image-profile.txt
-PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
-WITH_DEXPREOPT_DEBUG_INFO := false
-PRODUCT_DEXPREOPT_SPEED_APPS += \
-    Settings \
-    SystemUI \
-    TrebuchetQuickStep
 
 # Telephony
 PRODUCT_PACKAGES += \
