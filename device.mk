@@ -8,6 +8,8 @@
 $(call inherit-product, vendor/xiaomi/ginkgo/ginkgo-vendor.mk)
 $(call inherit-product, vendor/miuicamera/common/common-vendor.mk)
 
+include vendor/nusantara/config/branding.mk
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
