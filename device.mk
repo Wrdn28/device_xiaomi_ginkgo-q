@@ -361,10 +361,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     removepackages
 
-# NAD Parts
-PRODUCT_PACKAGES += \
-    NusantaraParts
-
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
